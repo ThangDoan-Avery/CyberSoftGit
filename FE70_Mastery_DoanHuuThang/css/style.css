@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 /* HEADER */
 .wrapper {
@@ -29,6 +30,7 @@ body {
   border-radius: 50%;
   font-weight: 100;
   margin-right: 10px;
+  margin-top: 5px;
 }
 .clear-both {
   clear: both;
@@ -61,4 +63,25 @@ body {
 .welcome__content img {
   width: 100%;
   padding-top: 22px;
+}
+/* INFO */
+.info {
+  background-color: #f6f6f6;
+  margin-top: 50px;
+}
+.item {
+  float: left;
+}
+.content {
+  width: 140px;
+  margin: 60px 0px;
+  padding-left: 10px;
+}
+.number {
+  font-size: 50px;
+  font-weight: 700;
+}
+.info__item {
+  float: left;
+  width: 25%;
 }
