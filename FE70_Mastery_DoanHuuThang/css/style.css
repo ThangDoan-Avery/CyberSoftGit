@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+/* HEADER */
+.wrapper {
+  padding: 0 150px;
+}
+.header ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.header ul li {
+  display: inline;
+  padding-right: 25px;
+  font-weight: 500;
+}
+.header ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header__logo i{
+  float: left;
+  color: #d0aa13;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 100;
+  margin-right: 10px;
+}
+.clear-both {
+  clear: both;
+}
+/* CAROUSEL */
+.carousel {
+  background-image: url("../images/2.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: top center;
+}
+/* WELCOME */
+.welcome__content {
+  float: left;
+  width: 50%;
+  padding-top: 40px;
+}
+.welcome__content p {
+  color: #979797;
+  padding-right: 60px;
+}
+.welcome__content button {
+  background-color: #fdc800;
+  border: 1px solid transparent;
+  padding: 15px 40px;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.welcome__content img {
+  width: 100%;
+  padding-top: 22px;
+}
