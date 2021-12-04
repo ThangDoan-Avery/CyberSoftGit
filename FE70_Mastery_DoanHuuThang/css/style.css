@@ -238,3 +238,6 @@ body {
 .footer {
   border-top: 1px solid #fdc80078;
 }
+.footer span {
+  opacity: 0.7;
+}
