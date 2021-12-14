@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samar</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./Outsource/FancyBox/source/jquery.fancybox.css"
+    />
+
+    <!-- Back to top -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/codyhouse-framework/main/assets/css/style.min.css"
+    />
+    <link rel="stylesheet" href="./Outsource/Slick/slick/slick.css" />
+    <link rel="stylesheet" href="./Outsource/Slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="bg">
+    <header>
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="#">
+            <img src="./images/logo-2.png" alt="" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><span>Home</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="#"><span>Pages</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="#"><span>Service</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="#"><span>Post Layout</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="#"><span>Blog</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="#"><span>Contact Us</span></a>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+          </ul>
+          <button href="#" class="btn animationBtn">GET A QUOTE</button>
+        </nav>
+      </div>
+    </header>
+    <section class="carousel">
+      <div class="row carousel__all align-items-center">
+        <div class="col-lg-7">
+          <div class="carousel__content">
+            <h6 class="">We are The Best</h6>
+            <h1>Freelance Product Designer Running</h1>
+            <p>
+              We develop the relationships that underpin the next phase in your
+              organisation’s growth.
+            </p>
+
+            <p>
+              <i class="fas fa-check"></i
+              ><span>Master's degree in designing</span>
+            </p>
+
+            <p>
+              <i class="fas fa-check"></i><span>Outstanding mobile design</span>
+            </p>
+            <button href="#" class="btn animationBtn">GET STARTED</button>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="carousel__media">
+            <img src="./images/pic3_1.png" alt="" />
+            <img src="./images/pic1.png" alt="" class="media-2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+    <script src="./Outsource/Slick/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider__content").slick({
+          dots: true,
+          autoplay: true,
+          infinite: true,
+          arrows: false,
+          speed: 300,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script src="./Outsource/FancyBox/source/jquery.fancybox.js"></script>
+    <!-- Fancybox -->
+    <script src="./Outsource/FancyBox/fancybox.jquery.json"></script>
+    <script>
+      $('[data-fancybox="gallery"]').fancybox({
+        // Options will go here
+      });
+    </script>
+
+    <!-- countup -->
+    <script src="./Outsource/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+
+    <script src="./Outsource/WOW-master/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
