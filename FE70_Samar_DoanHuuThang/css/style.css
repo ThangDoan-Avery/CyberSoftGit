@@ -43,9 +43,6 @@ header {
   width: 75%;
   padding: 0 15px;
 }
-.header__logo a {
-  text-decoration: none;
-}
 .header__logo {
 }
 nav ul li a {
@@ -98,9 +95,11 @@ nav {
 .carousel__all {
   width: 75%;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 1;
   position: relative;
   padding-top: 130px;
+  display: flex;
+  padding-top: 14rem;
 }
 .btn {
   background-color: #f55f8d;
@@ -113,6 +112,9 @@ nav {
   border-radius: 55px;
   color: white;
   margin-top: 10px;
+}
+.carousel__content {
+  width: 670px;
 }
 .carousel__content h1 {
   font-size: 70px;
@@ -151,6 +153,158 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+/* WHAT WE DO */
+.what-we-do {
+  padding-top: 115px;
+  padding-bottom: 0;
+  background-image: url("../images/bg2.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.we-do {
+  width: 75%;
+  margin: 0 auto;
+}
+.we-do .we-do__content {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.we-do .we-do__content h6 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f55f8d;
+  margin-bottom: 0px;
+}
+.we-do__content h2 {
+  font-size: 60px;
+}
+.we-do__items {
+  display: flex;
+  justify-content: space-around;
+}
+.we-do__item {
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+  padding: 30px;
+  transition: all 1s;
+  text-align: center;
+  margin: 15px;
+}
+.item-img {
+  margin-bottom: 25px;
+}
+.item-img img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  width: 15rem;
+}
+.item-1:hover {
+  transform: translateY(-15px);
+}
+.item-2:hover {
+  transform: translateY(-15px);
+}
+.item-3:hover {
+  transform: translateY(-15px);
+}
+/* ABOUT US */
+.about-us {
+  padding-top: 115px;
+  padding-bottom: 85px;
+  background-image: url("/images/bg15.png");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.about-us-all {
+  display: flex;
+}
+.about-us__img {
+  width: 50%;
+  margin: 50px 70px 60px 0;
+  box-sizing: border-box;
+  width: 50vw;
+  position: relative;
+}
+.about-us__content {
+  width: 600px;
+}
+.about-us__content h6 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f55f8d;
+  margin-bottom: 0px;
+}
+.about-us__content h2 {
+  line-height: 1.2;
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.about-us__img img {
+  border-radius: 0 100px 100px 0;
+}
+.about-us__content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  font-size: 15px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+.about-us__content p i {
+  color: #f55f8d;
+  padding-right: 12px;
+}
+/* THE NUMBER */
+.the-number {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/bg14.png");
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #f55f8d0a;
+}
+.all-number {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.number-info {
+  text-align: center;
+}
+.number-icon {
+  background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+  margin-bottom: 30px;
+  width: 80px;
+  padding: 15px 0px;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 45px;
+}
+.number-content h2 {
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1;
+  color: #f55f8d;
+}
+.number-content {
+  transform: translate(0, -15px);
+}
+.number-content > span {
+  color: #262626;
+  font-size: 18px;
+}
+/* ANIMATION */
 .media-2 {
   position: absolute;
   top: 0;
