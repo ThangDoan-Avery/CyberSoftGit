@@ -315,7 +315,6 @@ img {
   background-image: linear-gradient(to right, #f55f8d, #f8ae56);
   margin-bottom: 30px;
   width: 80px;
-  padding: 15px 0px;
   color: #fff;
   border-radius: 50%;
   margin-left: 45px;
@@ -478,11 +477,12 @@ img {
 .img-item {
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
-.img-item:before {
+.wall-color:before {
   position: absolute;
   top: 0;
-  left: -210%;
+  left: -75%;
   z-index: 2;
   display: block;
   content: "";
@@ -494,6 +494,24 @@ img {
     rgba(255, 255, 255, 0.3) 100%
   );
   transform: skewX(-25deg);
+}
+.img-item:hover .wall-color::before {
+  animation: shine 0.75s;
+}
+.wall-color:after {
+  content: "";
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 1s;
+}
+.img-item:hover .wall-color::after {
+  opacity: 0.4;
 }
 .img-item:hover:before {
   animation: shine 0.75s;
@@ -519,15 +537,19 @@ img {
 .work__icon a {
   color: white;
 }
+.work__overlay {
+  position: relative;
+}
 .img-item:hover .work__icon {
-  transform: translateY(0);
+  transform: translate(-15px, 15px);
   transition: all 0.5s;
+  opacity: 1;
 }
 .work__text {
   position: absolute;
   left: 25px;
   bottom: 25px;
-  transform: translateY(20px);
+  transform: translateY(6rem);
   transition: all 0.8s;
   text-align: left;
   bottom: -100%;
@@ -920,7 +942,7 @@ img {
   text-transform: uppercase;
 }
 .post-author a {
-  color: #f55f8d;
+  color: #fff;
 }
 .dlab-meta ul li i {
   color: #f55f8d;
@@ -1015,7 +1037,7 @@ footer {
 .sub-all {
   padding: 50px 60px;
   background-color: #fff;
-  z-index: 99;
+  z-index: 2;
   position: relative;
   border-radius: 10px;
   box-shadow: 0 0px 30px 0 rgb(0 0 0 / 10%);
@@ -1105,7 +1127,6 @@ footer .footer-title {
 }
 .widget_services ul li i {
   padding-right: 8px;
-  color: #636363;
 }
 footer .footer-title:before {
   width: 15px;
@@ -1133,9 +1154,6 @@ footer .widget_getintuch ul li span:hover {
   opacity: 1;
 }
 .widget_services ul a:hover {
-  color: #fff;
-}
-.widget_services ul a:hover .widget_services ul li i {
   color: #fff;
 }
 .footer-bottom {
@@ -1211,4 +1229,29 @@ footer .footer-bottom .copyright-text a {
   100% {
     transform: rotate(1deg) translate(2px, 2px);
   }
+}
+
+/* BACK TO TOP */
+.backToTop i {
+  background-color: #f55f8d;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 4px;
+  box-shadow: -4px 4px 24px -10px #f55f8d !important;
+  border-radius: 4px;
+  z-index: 999;
+  transition: all 0.8s;
+}
+
+.backToTop {
+  opacity: 0;
+}
+.text-replace {
+  text-indent: 0px;
 }
