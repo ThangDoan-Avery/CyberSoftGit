@@ -24,6 +24,9 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Slick -->
+    <link rel="stylesheet" href="./Outsource/Slick/slick/slick.css" />
+    <link rel="stylesheet" href="./Outsource/Slick/slick/slick-theme.css" />
     <!-- My style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -75,6 +78,13 @@
         </div>
       </nav>
     </header>
+    <section class="carousel">
+      <div class="my-carousel">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
+    </section>
     <!-- SERVICE -->
     <section class="service section-all">
       <div class="container">
@@ -1108,5 +1118,15 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
+    <!-- JS Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+    <script src="./Outsource/Slick/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my-carousel").slick({
+          rtl: true,
+        });
+      });
+    </script>
   </body>
 </html>
