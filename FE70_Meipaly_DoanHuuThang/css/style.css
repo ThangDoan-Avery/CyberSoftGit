@@ -529,16 +529,13 @@ footer {
   right: 50px;
   border-radius: 4px;
 }
-
 .backToTop {
   opacity: 0;
 }
-
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;
 }
-
 .cd-top--fade-out {
   opacity: 0.5;
 }
