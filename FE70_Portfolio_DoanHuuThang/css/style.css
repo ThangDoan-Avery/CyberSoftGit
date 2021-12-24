@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .navbar-brand i {
+  color: #35a22c;
+}
+header .navbar-brand span {
+  font-size: 3rem;
+}
+.navbar-nav li {
+  margin-right: 2rem;
+}
+.navbar-nav li a {
+  font-size: 1.5rem;
+}
+.navbar-nav li.active a {
+  color: #35a22c !important;
+}
+.navbar-nav li.active a::after {
+  width: 100% !important;
+}
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #35a22c;
+  width: 0;
+  transition: all 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+/* Carousel */
+.carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.carousel-inner .carousel-item:nth-child(1) {
+  background-image: url("./../images/finland.jpg");
+}
+.carousel-inner .carousel-item:nth-child(2) {
+  background-image: url("./../images/mountains.jpg");
+}
+.carousel-inner .carousel-item:nth-child(3) {
+  background-image: url("./../images/mountains-1.jpg");
+}
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000002b;
+}
+.carousel-caption .thumb_img {
+  width: 140px;
+}
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.carousel-caption .thumb_img img {
+  border-radius: 50%;
+}
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.carousel-caption h3 {
+  font-size: 56px;
+  line-height: 65px;
+}
+.carousel-caption p {
+  font-size: 24px;
+}
+.carousel-indicators li.active {
+  background-color: #35a22c;
+}
+.carousel-indicators {
+  bottom: 10%;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #35a22c;
+}
+.card {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0 10px #00000040;
+  cursor: pointer;
+}
+/* Feature */
+.feature {
+  background-image: url("./../images/3.jpg");
+  /* height: 500px; */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 100px 0 120px;
+}
+.feature .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030;
+}
+.feature__heading {
+  position: relative;
+}
+/* Project */
+.project-headding h1 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+.project-headding p {
+  color: #585858;
+  line-height: 24px;
+  font-size: 15px;
+}
+.heading p {
+  line-height: 24px;
+  font-size: 15px;
+}
+.feature__heading h1 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.nav-item .nav-link {
+  color: #585858;
+  margin: 5px 5px;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.project__content .nav .nav-item .nav-link {
+  border: 1px solid #1a1d2d;
+}
+.nav-item .nav-link.active {
+  border: 1px solid #35a22c;
+}
+.card-title {
+  font-size: 19px;
+}
+.card-text {
+  color: #585858;
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+.card:hover .card-body {
+  border-color: #35a22c;
+  border-top-color: transparent;
+}
+.card:hover .card-title {
+  color: #35a22c;
+}
+.overlay {
+  background-color: rgba(7, 10, 12, 0.72) !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.feature__item {
+  padding: 40px 40px;
+  transition: 0.3s;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
+}
+.feature__item i {
+  font-size: 48px;
+  color: #35a22c;
+}
+.feature__item h4 {
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+  padding-top: 25px;
+  font-weight: 800;
+}
+.feature__item p {
+  padding-top: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+.feature__item:hover {
+  background: #000;
+  border-color: #fff;
+}
+/* Award */
+.award {
+  position: relative;
+  color: #585858;
+  padding: 70px 0;
+}
+.award__bg {
+  background-image: url("../images/memphis_3.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.award__left {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+  padding: 45px;
+}
+.heading {
+  max-width: 750px;
+}
+.container-lg {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.award__right {
+  padding: 45px 0;
+}
+.heading h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+.heading p,
+.award__right p {
+  color: #585858;
+  line-height: 24px;
+  font-size: 15px;
+}
+/* Footer */
+footer {
+  background: #222;
+}
+.footer__main a {
+  margin-right: 10px;
+}
+.footer__main i {
+  width: 47px;
+  height: 47px;
+  line-height: 47px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+.footer__copies {
+  border-top: 1px solid #454545;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+footer p {
+  color: #aaa;
+  margin: 0;
+  font-size: 18px;
+}
+footer a {
+  color: #aaa;
+  font-size: 18px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #35a22c;
+}
+.footer__main i:hover {
+  border-color: #35a22c;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #35a22c;
+}
+/* Responsive */
+@media screen and (max-width: 320px) {
+  .carousel-caption img {
+    width: 120px;
+  }
+  .carousel-caption h3 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+  .carousel-caption p {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carousel-caption img {
+    width: 125px;
+  }
+  .carousel-caption h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+}
